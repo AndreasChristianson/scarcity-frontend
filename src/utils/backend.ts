@@ -1,0 +1,1 @@
+export default (relativeUrl:string) => `${import.meta.env.VITE_SCARCITY_BACKEND}${relativeUrl}`

@@ -1,9 +1,15 @@
-import type { Component } from "solid-js";
+import { Component, createResource } from "solid-js";
+import EnvironmentDisplay from "../concrete/EnvironmentDisplay";
+import Loading from "../concrete/Loading";
 
-const Menu: Component = () => (
-  <>
-    <h1 class="text-center text-2xl py-10">{import.meta.env.VITE_TEST}</h1>
-  </>
-);
+const Menu: Component = () => {
 
+  return (
+    <div class="flex" >
+      <EnvironmentDisplay/>
+      <EnvironmentDisplay/>
+      {/* <Loading /> */}
+    </div>
+  );
+};
 export default Menu;
